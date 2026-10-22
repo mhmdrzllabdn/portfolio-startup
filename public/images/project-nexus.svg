@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background:#0e0e0e;">
+  <defs>
+    <linearGradient id="nexus-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="chart-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#666666" />
+      <stop offset="60%" stop-color="#dddddd" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark UI panel frame -->
+  <rect x="25" y="25" width="750" height="550" rx="4" fill="#141414" stroke="#252525" stroke-width="1.2" />
+
+  <!-- Top bar of dashboard -->
+  <line x1="25" y1="75" x2="775" y2="75" stroke="#222222" stroke-width="1" />
+  <circle cx="50" cy="50" r="4" fill="#333333" />
+  <circle cx="65" cy="50" r="4" fill="#333333" />
+  <circle cx="80" cy="50" r="4" fill="#333333" />
+  <text x="110" y="54" fill="#888888" font-family="monospace" font-size="11" letter-spacing="1">NEXUS FINANCE // REAL-TIME DISTRIBUTED LEDGER</text>
+  <rect x="680" y="40" width="70" height="20" rx="2" fill="#202020" />
+  <text x="693" y="54" fill="#ffffff" font-family="monospace" font-size="10">LIVE TPS: 14.8K</text>
+
+  <!-- Left Sidebar preview -->
+  <line x1="200" y1="75" x2="200" y2="575" stroke="#222222" stroke-width="1" />
+  <rect x="45" y="100" width="130" height="12" rx="2" fill="#252525" />
+  <rect x="45" y="125" width="90" height="10" rx="2" fill="#1c1c1c" />
+  <rect x="45" y="145" width="110" height="10" rx="2" fill="#1c1c1c" />
+  <rect x="45" y="165" width="80" height="10" rx="2" fill="#1c1c1c" />
+
+  <!-- Metric Cards -->
+  <rect x="225" y="95" width="165" height="70" rx="3" fill="#191919" stroke="#282828" stroke-width="0.8" />
+  <text x="240" y="120" fill="#777777" font-family="monospace" font-size="10">SETTLEMENT VOL (24H)</text>
+  <text x="240" y="148" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">$42,850,190</text>
+
+  <rect x="410" y="95" width="165" height="70" rx="3" fill="#191919" stroke="#282828" stroke-width="0.8" />
+  <text x="425" y="120" fill="#777777" font-family="monospace" font-size="10">AVG BLOCK LATENCY</text>
+  <text x="425" y="148" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">8.4 ms</text>
+
+  <rect x="595" y="95" width="155" height="70" rx="3" fill="#191919" stroke="#282828" stroke-width="0.8" />
+  <text x="610" y="120" fill="#777777" font-family="monospace" font-size="10">NODE HEALTH</text>
+  <text x="610" y="148" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18">99.998%</text>
+
+  <!-- Main Chart Area -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="0.6">
+    <line x1="225" y1="240" x2="750" y2="240" stroke-dasharray="3 3"/>
+    <line x1="225" y1="310" x2="750" y2="310" stroke-dasharray="3 3"/>
+    <line x1="225" y1="380" x2="750" y2="380" stroke-dasharray="3 3"/>
+    <line x1="225" y1="450" x2="750" y2="450" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Area under curve -->
+  <path d="M225,430 C300,410 350,450 420,360 C480,280 540,320 600,240 C660,160 700,220 750,180 L750,490 L225,490 Z" fill="url(#nexus-glow)" />
+
+  <!-- Chart Curve line -->
+  <path d="M225,430 C300,410 350,450 420,360 C480,280 540,320 600,240 C660,160 700,220 750,180" fill="none" stroke="url(#chart-line)" stroke-width="2.5" />
+
+  <!-- Active Price Node point -->
+  <circle cx="750" cy="180" r="5" fill="#ffffff" />
+  <circle cx="750" cy="180" r="14" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4" />
+
+  <!-- Bottom status -->
+  <line x1="225" y1="520" x2="750" y2="520" stroke="#222222" stroke-width="1" />
+  <text x="235" y="546" fill="#888888" font-family="monospace" font-size="10">EVENT STREAM: BLOCK #1,842,910 VERIFIED</text>
+  <text x="650" y="546" fill="#666666" font-family="monospace" font-size="10">SHARD 04 / CONSENSUS</text>
+</svg>

@@ -1,0 +1,153 @@
+import { Technology, TechnologyCategory } from "@/types";
+
+export const technologiesData: Technology[] = [
+  // 1. Frontend
+  {
+    id: 1,
+    name: "HTML5",
+    category: "frontend",
+    group: "Frontend",
+    description: "Building semantic web document structures and accessible page foundations",
+    documentationUrl: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+    badge: "Markup",
+  },
+  {
+    id: 2,
+    name: "CSS3",
+    category: "frontend",
+    group: "Frontend",
+    description: "Crafting responsive layouts, visual design systems, and animations",
+    documentationUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    badge: "Styling",
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    category: "frontend",
+    group: "Frontend",
+    description: "Powering interactive user interfaces, client-side logic, and DOM manipulation",
+    documentationUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    badge: "Scripting",
+  },
+  {
+    id: 4,
+    name: "TypeScript",
+    category: "frontend",
+    group: "Frontend",
+    description: "Static type system for scalable, robust, and maintainable application code",
+    documentationUrl: "https://www.typescriptlang.org",
+    badge: "Type-Safe",
+  },
+  {
+    id: 5,
+    name: "React.js",
+    category: "frontend",
+    group: "Frontend",
+    description: "Building reusable, reactive component hierarchies and modern UI state flows",
+    documentationUrl: "https://react.dev",
+    badge: "Library",
+  },
+  {
+    id: 6,
+    name: "Tailwind CSS",
+    category: "frontend",
+    group: "Frontend",
+    description: "Utility-first CSS framework for rapid and consistent design system implementation",
+    documentationUrl: "https://tailwindcss.com",
+    badge: "Utility CSS",
+  },
+  {
+    id: 7,
+    name: "Bootstrap",
+    category: "frontend",
+    group: "Frontend",
+    description: "Responsive grid systems and accessible layout components for fast prototyping",
+    documentationUrl: "https://getbootstrap.com",
+    badge: "CSS Grid",
+  },
+
+  // 2. Backend
+  {
+    id: 8,
+    name: "PHP",
+    category: "backend",
+    group: "Backend",
+    description: "Server-side language for dynamic web processing, scripting, and backend logic",
+    documentationUrl: "https://www.php.net",
+    badge: "Server-Side",
+  },
+  {
+    id: 9,
+    name: "Node.js",
+    category: "backend",
+    group: "Backend",
+    description: "Server-side JavaScript runtime for performant microservices and backend APIs",
+    documentationUrl: "https://nodejs.org",
+    badge: "Runtime",
+  },
+  {
+    id: 10,
+    name: "REST API",
+    category: "backend",
+    group: "Backend",
+    description: "Standard architectural protocol for client-server communication and JSON serialization",
+    documentationUrl: "https://restfulapi.net",
+    badge: "Architecture",
+  },
+
+  // 3. Database
+  {
+    id: 11,
+    name: "MySQL",
+    category: "database",
+    group: "Database",
+    description: "Relational database management system for structured data storage and SQL queries",
+    documentationUrl: "https://www.mysql.com",
+    badge: "RDBMS",
+  },
+  {
+    id: 12,
+    name: "PostgreSQL",
+    category: "database",
+    group: "Database",
+    description: "Enterprise-grade open-source relational database with robust ACID compliance",
+    documentationUrl: "https://www.postgresql.org",
+    badge: "SQL Database",
+  },
+
+  // 4. Tools
+  {
+    id: 13,
+    name: "Git",
+    category: "tool",
+    group: "Tools",
+    description: "Distributed version control system for tracking source code revisions and history",
+    documentationUrl: "https://git-scm.com",
+    badge: "Version Control",
+  },
+  {
+    id: 14,
+    name: "GitHub",
+    category: "tool",
+    group: "Tools",
+    description: "Cloud platform for repository hosting, team collaboration, and CI/CD pipelines",
+    documentationUrl: "https://github.com",
+    badge: "Repository",
+  },
+  {
+    id: 15,
+    name: "Visual Studio Code",
+    category: "tool",
+    group: "Tools",
+    description: "Primary extensible code editor and IDE environment for web engineering",
+    documentationUrl: "https://code.visualstudio.com",
+    badge: "Editor",
+  },
+];
+
+export const categoryLabels: Record<string, string> = {
+  frontend: "FRONTEND",
+  backend: "BACKEND",
+  database: "DATABASE",
+  tool: "TOOLS",
+};

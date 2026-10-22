@@ -1,0 +1,128 @@
+// Prisma Schema generated from ERD (dbdiagram.io)
+// Database: PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ProjectStatus {
+  in_progress
+  completed
+  archived
+}
+
+enum TechnologyCategory {
+  language
+  frontend
+  backend
+  database
+  devops
+  testing
+  security
+  tool
+  other
+}
+
+enum ContactStatus {
+  new
+  read
+  replied
+  spam
+}
+
+enum PostStatus {
+  draft
+  published
+  archived
+}
+
+model Project {
+  id           Int               @id @default(autoincrement())
+  title        String            @db.VarChar(150)
+  slug         String            @unique @db.VarChar(180)
+  category     String            @db.VarChar(100)
+  summary      String            @db.VarChar(300)
+  description  String            @db.Text
+  problem      String            @db.Text
+  solution     String            @db.Text
+  cover_image  String            @db.VarChar(500)
+  live_url     String?           @db.VarChar(500)
+  repo_url     String?           @db.VarChar(500)
+  status       ProjectStatus     @default(completed)
+  is_featured  Boolean           @default(false)
+  sort_order   Int               @default(0)
+  start_date   DateTime?         @db.Date
+  end_date     DateTime?         @db.Date
+  created_at   DateTime          @default(now()) @db.Timestamp(6)
+  updated_at   DateTime          @updatedAt @db.Timestamp(6)
+
+  technologies ProjectTechnology[]
+  messages     ContactMessage[]
+  posts        Post[]
+
+  @@map("projects")
+}
+
+model Technology {
+  id                Int                @id @default(autoincrement())
+  name              String             @db.VarChar(100)
+  category          TechnologyCategory
+  icon_url          String?            @db.VarChar(500)
+  documentation_url String?            @db.VarChar(500)
+  created_at        DateTime           @default(now()) @db.Timestamp(6)
+
+  projects ProjectTechnology[]
+
+  @@map("technologies")
+}
+
+model ProjectTechnology {
+  project_id    Int
+  technology_id Int
+
+  project    Project    @relation(fields: [project_id], references: [id], onDelete: Cascade)
+  technology Technology @relation(fields: [technology_id], references: [id], onDelete: Cascade)
+
+  @@id([project_id, technology_id])
+  @@map("project_technologies")
+}
+
+model ContactMessage {
+  id         Int           @id @default(autoincrement())
+  project_id Int?
+  name       String        @db.VarChar(120)
+  email      String        @db.VarChar(255)
+  subject    String        @db.VarChar(200)
+  message    String        @db.Text
+  status     ContactStatus @default(new)
+  ip_hash    String?       @db.VarChar(128)
+  created_at DateTime      @default(now()) @db.Timestamp(6)
+  replied_at DateTime?     @db.Timestamp(6)
+
+  project Project? @relation(fields: [project_id], references: [id], onDelete: SetNull)
+
+  @@map("contact_messages")
+}
+
+model Post {
+  id           Int        @id @default(autoincrement())
+  project_id   Int?
+  title        String     @db.VarChar(180)
+  slug         String     @unique @db.VarChar(200)
+  excerpt      String     @db.VarChar(400)
+  content      String     @db.Text
+  cover_image  String?    @db.VarChar(500)
+  status       PostStatus @default(draft)
+  published_at DateTime?  @db.Timestamp(6)
+  created_at   DateTime   @default(now()) @db.Timestamp(6)
+  updated_at   DateTime   @updatedAt @db.Timestamp(6)
+
+  project Project? @relation(fields: [project_id], references: [id], onDelete: SetNull)
+
+  @@map("posts")
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background:#141414;">
+  <defs>
+    <linearGradient id="wildhorn-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#444444" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#444444" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background base -->
+  <rect width="800" height="600" fill="url(#wildhorn-grad)" />
+  
+  <!-- Subtle coordinate grid -->
+  <g stroke="#262626" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.6">
+    <line x1="50" y1="0" x2="50" y2="600" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="250" y1="0" x2="250" y2="600" />
+    <line x1="350" y1="0" x2="350" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+    <line x1="550" y1="0" x2="550" y2="600" />
+    <line x1="650" y1="0" x2="650" y2="600" />
+    <line x1="750" y1="0" x2="750" y2="600" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+  </g>
+
+  <!-- Mountainous topographic wireframe curves -->
+  <path d="M0,450 Q200,320 400,380 T800,350 L800,600 L0,600 Z" fill="#181818" opacity="0.9"/>
+  <path d="M0,420 Q180,280 380,330 T800,290" fill="none" stroke="#333333" stroke-width="1.2"/>
+  <path d="M0,380 Q220,240 430,300 T800,240" fill="none" stroke="#444444" stroke-width="1.5"/>
+  <path d="M0,340 Q250,190 470,260 T800,180" fill="none" stroke="#666666" stroke-width="1.8"/>
+  <path d="M0,290 Q280,140 510,210 T800,130" fill="none" stroke="url(#line-glow)" stroke-width="2.2"/>
+  <path d="M0,250 Q310,90 540,160 T800,80" fill="none" stroke="#888888" stroke-width="1.5"/>
+  <path d="M120,220 Q350,60 580,120 T800,40" fill="none" stroke="#aaaaaa" stroke-width="1"/>
+
+  <!-- Telemetry points and labels -->
+  <circle cx="510" cy="210" r="4" fill="#ffffff" />
+  <circle cx="510" cy="210" r="12" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.5" />
+  <line x1="510" y1="210" x2="570" y2="170" stroke="#ffffff" stroke-width="0.8" />
+  <text x="580" y="174" fill="#ffffff" font-family="monospace" font-size="11" letter-spacing="1.5">PIPELINE RUNNER #04</text>
+  <text x="580" y="190" fill="#888888" font-family="monospace" font-size="9" letter-spacing="1">LATENCY: 1.2MS | CPU: 14%</text>
+
+  <!-- Architectural corner crop marks -->
+  <path d="M30,50 L30,30 L50,30" fill="none" stroke="#666666" stroke-width="1.5" />
+  <path d="M770,50 L770,30 L750,30" fill="none" stroke="#666666" stroke-width="1.5" />
+  <path d="M30,550 L30,570 L50,570" fill="none" stroke="#666666" stroke-width="1.5" />
+  <path d="M770,550 L770,570 L750,570" fill="none" stroke="#666666" stroke-width="1.5" />
+
+  <text x="50" y="555" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18" letter-spacing="3">WILDHORN</text>
+  <text x="50" y="572" fill="#888888" font-family="monospace" font-size="10" letter-spacing="1.5">DISTRIBUTED CLOUD RUNNER</text>
+</svg>

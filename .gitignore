@@ -1,0 +1,44 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# next.js build output
+/.next/
+/out/
+
+# production
+/build
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local environment & secret files (CRITICAL: NEVER COMMIT TO GIT)
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel & hosting cache
+.vercel
+
+# typescript cache
+*.tsbuildinfo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# editor directories
+.vscode/
+.idea/
