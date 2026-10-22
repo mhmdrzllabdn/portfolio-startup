@@ -211,7 +211,7 @@ export default function TechnologyStack() {
                     className="p-5 sm:p-6 hover:bg-neutral-50/70 transition-colors flex flex-col lg:flex-row lg:items-center justify-between gap-4 group"
                   >
                     {/* Index & Group Header */}
-                    <div className="flex items-start sm:items-center gap-3 sm:gap-6 min-w-[260px]">
+                    <div className="flex items-start sm:items-center gap-3 sm:gap-6 min-w-0 sm:min-w-[260px]">
                       <span className="font-mono text-xs text-neutral-400 font-bold flex-shrink-0">
                         [{g.index}]
                       </span>

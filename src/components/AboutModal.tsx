@@ -31,7 +31,7 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-about-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-black/60 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 md:p-10 bg-black/60 backdrop-blur-sm"
     >
       <div
         className="fixed inset-0"
@@ -39,9 +39,9 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
         aria-hidden="true"
       />
 
-      <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white border border-neutral-200 shadow-2xl z-10 text-black flex flex-col">
+      <div className="relative w-full max-w-3xl max-h-[96vh] sm:max-h-[90vh] overflow-y-auto bg-white border-t sm:border border-neutral-200 shadow-2xl z-10 text-black flex flex-col rounded-t-xl sm:rounded-none">
         {/* Header */}
-        <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-white/95 backdrop-blur-md border-b border-neutral-200">
+        <div className="sticky top-0 z-20 flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 bg-white/95 backdrop-blur-md border-b border-neutral-200">
           <span className="eyebrow-text text-neutral-500 font-semibold">FULL PROFILE & BACKGROUND</span>
           <button
             type="button"
@@ -54,7 +54,7 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
         </div>
 
         {/* Content */}
-        <div className="p-6 sm:p-8 space-y-8">
+        <div className="p-4 sm:p-8 space-y-6 sm:space-y-8">
           <div>
             <h2 id="modal-about-title" className="editorial-title text-3xl sm:text-4xl font-extrabold text-black mb-4">
               ABOUT REZA

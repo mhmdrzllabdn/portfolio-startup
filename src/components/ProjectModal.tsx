@@ -34,7 +34,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-project-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-black/60 backdrop-blur-sm transition-all"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 md:p-10 bg-black/60 backdrop-blur-sm transition-all"
     >
       {/* Backdrop click area */}
       <div
@@ -44,9 +44,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       />
 
       {/* Modal Dialog Content */}
-      <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white border border-neutral-200 shadow-2xl z-10 text-black flex flex-col">
+      <div className="relative w-full max-w-4xl max-h-[96vh] sm:max-h-[90vh] overflow-y-auto bg-white border-t sm:border border-neutral-200 shadow-2xl z-10 text-black flex flex-col rounded-t-xl sm:rounded-none">
         {/* Header Bar */}
-        <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-white/95 backdrop-blur-md border-b border-neutral-200">
+        <div className="sticky top-0 z-20 flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 bg-white/95 backdrop-blur-md border-b border-neutral-200">
           <div className="flex items-center gap-2">
             <span className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-600">
               {project.category}
@@ -67,7 +67,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-8 space-y-8">
+        <div className="p-4 sm:p-8 space-y-6 sm:space-y-8">
           {/* Cover Image Frame */}
           <div className="relative w-full aspect-video sm:aspect-[21/9] bg-neutral-100 border border-neutral-200 overflow-hidden">
             <Image
@@ -179,8 +179,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         {/* Modal Footer / Actions */}
-        <div className="sticky bottom-0 px-6 py-4 bg-neutral-50 border-t border-neutral-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
+        <div className="sticky bottom-0 px-4 sm:px-6 py-3.5 bg-neutral-50 border-t border-neutral-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             {project.repoUrl && (
               <a
                 href={project.repoUrl}

@@ -88,7 +88,7 @@ export default function HeroSection() {
             <div className="lg:col-span-7 flex flex-col justify-between self-stretch pb-8 sm:pb-16 pt-2">
               <div>
                 {/* Top Status Bar (Mobile & Desktop) */}
-                <div className="flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono text-neutral-600 mb-6 pb-3 border-b border-neutral-200">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center justify-between gap-2 sm:gap-3 text-[11px] font-mono text-neutral-600 mb-6 pb-3 border-b border-neutral-200">
                   <span className="font-semibold text-neutral-700 tracking-wider uppercase">
                     WEB DEVELOPER // PORTFOLIO
                   </span>
@@ -111,7 +111,7 @@ export default function HeroSection() {
                 {/* Big Headline */}
                 <RevealOnScroll delayMs={60}>
                   <div className="mb-4 sm:mb-8">
-                    <h1 className="hero-giant-title text-6xl sm:text-8xl md:text-9xl lg:text-[130px] xl:text-[145px] font-normal text-neutral-950 tracking-[-0.04em] leading-[0.88] select-none">
+                    <h1 className="hero-giant-title text-5xl sm:text-8xl md:text-9xl lg:text-[130px] xl:text-[145px] font-normal text-neutral-950 tracking-[-0.04em] leading-[0.88] select-none">
                       Hello
                     </h1>
                   </div>
@@ -182,7 +182,7 @@ export default function HeroSection() {
                     transform: `translate3d(${mouseOffset.x}px, ${mouseOffset.y}px, 0)`,
                     transition: "transform 0.25s cubic-bezier(0.2, 0, 0.2, 1)",
                   }}
-                  className="relative w-full max-w-[320px] sm:max-w-[400px] lg:max-w-none mx-auto aspect-[3/4] flex items-end justify-center overflow-hidden group"
+                  className="relative w-full max-w-[280px] sm:max-w-[400px] lg:max-w-none mx-auto aspect-[3/4] flex items-end justify-center overflow-hidden group"
                 >
                   <div
                     aria-hidden="true"

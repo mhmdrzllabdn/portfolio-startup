@@ -124,7 +124,7 @@ export default function ContactSection() {
                 <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-widest block font-semibold mb-1">
                   DIRECT EMAIL ADDRESS
                 </span>
-                <span className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-black tracking-tight select-all break-all sm:break-normal">
+                <span className="font-heading font-bold text-base sm:text-2xl md:text-3xl text-black tracking-tight select-all break-all sm:break-normal">
                   mhmdrzllabdnn@gmail.com
                 </span>
               </div>

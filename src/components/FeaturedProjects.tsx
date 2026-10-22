@@ -104,11 +104,11 @@ export default function FeaturedProjects() {
           {/* Section Header */}
           <RevealOnScroll>
             <div className="mb-10 sm:mb-16">
-              <div className="flex items-center gap-2 mb-2 sm:mb-3">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2 sm:mb-3">
                 <span className="text-xs font-mono text-neutral-500 tracking-widest uppercase">
                   Solutions I Offer
                 </span>
-                <span className="inline-flex items-center gap-1 text-[10px] font-mono font-bold bg-neutral-200/80 text-neutral-800 px-2 py-0.5">
+                <span className="hidden sm:inline-flex items-center gap-1 text-[10px] font-mono font-bold bg-neutral-200/80 text-neutral-800 px-2 py-0.5">
                   <Sparkles className="w-3 h-3 text-black" />
                   CLICK CARD FOR INTERACTIVE SIMULATION
                 </span>

@@ -131,7 +131,7 @@ export default function ProcessTimeline() {
           </RevealOnScroll>
 
           {/* Stepper Navigation Track */}
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-3 mb-6 sm:mb-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-3 mb-6 sm:mb-8">
             {phases.map((p, idx) => {
               const isCurrent = selectedPhaseIndex === idx;
               return (

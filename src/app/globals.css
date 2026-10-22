@@ -31,6 +31,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
@@ -41,6 +43,7 @@
     background-color: #FAFAFA;
     color: #111111;
     touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Accessible focus indicators */
@@ -92,6 +95,13 @@
   font-weight: 500;
 }
 
+@media (max-width: 640px) {
+  .hero-giant-title {
+    letter-spacing: -0.035em;
+    line-height: 0.92;
+  }
+}
+
 .vertical-lr {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -103,6 +113,14 @@
   text-transform: uppercase;
   font-size: 0.72rem;
   font-weight: 600;
+}
+
+/* Mobile container safety */
+@media (max-width: 640px) {
+  /* Prevent horizontal overflow on mobile */
+  .max-w-\[1440px\] {
+    max-width: 100vw;
+  }
 }
 
 .thin-line-dark {
@@ -285,6 +303,12 @@
 @media (max-width: 640px) {
   .editorial-card:hover {
     transform: translateY(-2px);
+  }
+
+  /* Better mobile scrolling for code blocks */
+  pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

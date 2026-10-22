@@ -56,6 +56,9 @@ const config: Config = {
         widest: "0.15em",
         mega: "0.25em",
       },
+      screens: {
+        xs: "475px",
+      },
     },
   },
   plugins: [],

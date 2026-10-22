@@ -491,20 +491,20 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-solution-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-8 bg-black/60 backdrop-blur-sm transition-all"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 md:p-8 bg-black/60 backdrop-blur-sm transition-all"
     >
       {/* Backdrop */}
       <div className="fixed inset-0" onClick={onClose} aria-hidden="true" />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto bg-white border border-neutral-300 shadow-2xl z-10 text-black flex flex-col animate-fadeIn">
+      <div className="relative w-full max-w-5xl max-h-[100vh] sm:max-h-[92vh] overflow-y-auto bg-white border border-neutral-300 shadow-2xl z-10 text-black flex flex-col animate-fadeIn rounded-t-xl sm:rounded-none">
         {/* Top Header Bar */}
-        <div className="sticky top-0 z-20 flex items-center justify-between px-5 sm:px-8 py-4 bg-white/95 backdrop-blur-md border-b border-neutral-200">
-          <div className="flex items-center gap-3">
+        <div className="sticky top-0 z-20 flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4 bg-white/95 backdrop-blur-md border-b border-neutral-200">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <span className="font-mono text-xs font-bold bg-black text-white px-2 py-0.5">
               {solution.number}
             </span>
-            <span className="text-xs font-mono text-neutral-500 uppercase tracking-wider font-semibold">
+            <span className="text-xs font-mono text-neutral-500 uppercase tracking-wider font-semibold truncate">
               {solution.subtitle}
             </span>
           </div>
@@ -519,11 +519,11 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex border-b border-neutral-200 bg-neutral-50 px-5 sm:px-8">
+        <div className="flex overflow-x-auto no-scrollbar border-b border-neutral-200 bg-neutral-50 px-4 sm:px-8">
           <button
             type="button"
             onClick={() => setActiveTab("overview")}
-            className={`py-3 px-4 text-xs font-mono font-bold tracking-wider border-b-2 transition-all cursor-pointer ${
+            className={`py-3 px-3 sm:px-4 text-[10px] sm:text-xs font-mono font-bold tracking-wider border-b-2 transition-all cursor-pointer whitespace-nowrap ${
               activeTab === "overview"
                 ? "border-black text-black bg-white"
                 : "border-transparent text-neutral-500 hover:text-black"
@@ -534,7 +534,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
           <button
             type="button"
             onClick={() => setActiveTab("interactive")}
-            className={`py-3 px-4 text-xs font-mono font-bold tracking-wider border-b-2 transition-all cursor-pointer ${
+            className={`py-3 px-3 sm:px-4 text-[10px] sm:text-xs font-mono font-bold tracking-wider border-b-2 transition-all cursor-pointer whitespace-nowrap ${
               activeTab === "interactive"
                 ? "border-black text-black bg-white"
                 : "border-transparent text-neutral-500 hover:text-black"
@@ -545,7 +545,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
         </div>
 
         {/* Modal Content */}
-        <div className="p-5 sm:p-8 space-y-8 flex-1">
+        <div className="p-4 sm:p-8 space-y-6 sm:space-y-8 flex-1">
           {activeTab === "overview" ? (
             <>
               {/* Cover Image Frame */}
@@ -695,11 +695,11 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                       </h3>
                     </div>
 
-                    <div className="flex flex-wrap items-center gap-1.5 text-xs font-mono bg-neutral-100 p-1 border border-neutral-200">
+                    <div className="flex items-center gap-1 text-[11px] sm:text-xs font-mono bg-neutral-100 p-1 border border-neutral-200 overflow-x-auto no-scrollbar max-w-full">
                       <button
                         type="button"
                         onClick={() => setWebDevSubTab("backend")}
-                        className={`px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                        className={`px-2.5 sm:px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap flex-shrink-0 ${
                           webDevSubTab === "backend"
                             ? "bg-black text-white shadow-xs"
                             : "text-neutral-600 hover:text-black hover:bg-neutral-200/60"
@@ -712,7 +712,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                       <button
                         type="button"
                         onClick={() => setWebDevSubTab("frontend")}
-                        className={`px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                        className={`px-2.5 sm:px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap flex-shrink-0 ${
                           webDevSubTab === "frontend"
                             ? "bg-black text-white shadow-xs"
                             : "text-neutral-600 hover:text-black hover:bg-neutral-200/60"
@@ -725,7 +725,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                       <button
                         type="button"
                         onClick={() => setWebDevSubTab("setup")}
-                        className={`px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                        className={`px-2.5 sm:px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap flex-shrink-0 ${
                           webDevSubTab === "setup"
                             ? "bg-black text-white shadow-xs"
                             : "text-neutral-600 hover:text-black hover:bg-neutral-200/60"
@@ -738,7 +738,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                       <button
                         type="button"
                         onClick={() => setWebDevSubTab("responsive")}
-                        className={`px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                        className={`px-2.5 sm:px-3 py-1.5 font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap flex-shrink-0 ${
                           webDevSubTab === "responsive"
                             ? "bg-black text-white shadow-xs"
                             : "text-neutral-600 hover:text-black hover:bg-neutral-200/60"
@@ -753,13 +753,13 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                   {/* Sub-tab 1: Backend Structure */}
                   {webDevSubTab === "backend" && (
                     <div className="space-y-4 animate-fadeIn">
-                      <div className="p-3 bg-neutral-50 border border-neutral-200 flex items-center justify-between text-xs font-mono">
-                        <div className="flex items-center gap-2">
-                          <FolderTree className="w-4 h-4 text-neutral-600" />
+                      <div className="p-3 bg-neutral-50 border border-neutral-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <FolderTree className="w-4 h-4 text-neutral-600 flex-shrink-0" />
                           <span className="font-bold text-black">BACKEND DIRECTORY:</span>
                           <span className="text-neutral-500">Node.js + Express.js + Prisma ORM + PostgreSQL</span>
                         </div>
-                        <span className="text-[10px] bg-neutral-200 px-2 py-0.5 text-neutral-800 font-semibold">
+                        <span className="text-[10px] bg-neutral-200 px-2 py-0.5 text-neutral-800 font-semibold self-start sm:self-auto">
                           CLICK FILE FOR DETAILED SPECS
                         </span>
                       </div>
@@ -852,13 +852,13 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                   {/* Sub-tab 2: Frontend Structure */}
                   {webDevSubTab === "frontend" && (
                     <div className="space-y-4 animate-fadeIn">
-                      <div className="p-3 bg-neutral-50 border border-neutral-200 flex items-center justify-between text-xs font-mono">
-                        <div className="flex items-center gap-2">
-                          <FolderTree className="w-4 h-4 text-neutral-600" />
+                      <div className="p-3 bg-neutral-50 border border-neutral-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <FolderTree className="w-4 h-4 text-neutral-600 flex-shrink-0" />
                           <span className="font-bold text-black">FRONTEND DIRECTORY:</span>
                           <span className="text-neutral-500">React 18 + Vite SPA + Context API + Axios Interceptor</span>
                         </div>
-                        <span className="text-[10px] bg-neutral-200 px-2 py-0.5 text-neutral-800 font-semibold">
+                        <span className="text-[10px] bg-neutral-200 px-2 py-0.5 text-neutral-800 font-semibold self-start sm:self-auto">
                           CLICK FILE FOR DETAILED SPECS
                         </span>
                       </div>
@@ -951,12 +951,12 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                   {/* Sub-tab 3: Database & Setup Guide */}
                   {webDevSubTab === "setup" && (
                     <div className="space-y-5 animate-fadeIn">
-                      <div className="p-3.5 bg-neutral-900 text-white flex items-center justify-between text-xs font-mono">
+                      <div className="p-3.5 bg-neutral-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono">
                         <div className="flex items-center gap-2">
-                          <Terminal className="w-4 h-4 text-neutral-300" />
+                          <Terminal className="w-4 h-4 text-neutral-300 flex-shrink-0" />
                           <span className="font-bold text-white">HOW TO RUN THE PROJECT &amp; DATABASE SETUP</span>
                         </div>
-                        <span className="text-[10px] bg-neutral-800 text-neutral-300 px-2 py-0.5">
+                        <span className="text-[10px] bg-neutral-800 text-neutral-300 px-2 py-0.5 self-start sm:self-auto">
                           PostgreSQL 18 + Prisma CLI + Vite Dev
                         </span>
                       </div>
@@ -1077,18 +1077,19 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                       </div>
 
                       {/* Mock Container */}
-                      <div className="bg-neutral-100 p-4 sm:p-6 flex items-center justify-center min-h-[300px] border border-neutral-200 overflow-hidden">
+                      <div className="bg-neutral-100 p-2 sm:p-6 flex items-center justify-center min-h-[300px] border border-neutral-200 overflow-hidden">
                         <div
                           style={{
+                            maxWidth: "100%",
                             width:
                               previewViewport === "mobile"
                                 ? "320px"
                                 : previewViewport === "tablet"
-                                ? "540px"
+                                ? "min(540px, 100%)"
                                 : "100%",
                             transition: "width 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
                           }}
-                          className="bg-white border border-neutral-300 shadow-md p-4 space-y-3 mx-auto"
+                          className="bg-white border border-neutral-300 shadow-md p-3 sm:p-4 space-y-3 mx-auto w-full"
                         >
                           <div className="flex items-center justify-between border-b border-neutral-200 pb-2 text-[10px] font-mono text-neutral-400">
                             <span>PKL REPOSITORY PORTAL</span>
@@ -1123,13 +1124,13 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
                     </div>
 
                     {/* Category Filter */}
-                    <div className="flex flex-wrap gap-1.5 text-xs font-mono">
+                    <div className="flex overflow-x-auto no-scrollbar gap-1.5 text-xs font-mono pb-1 max-w-full">
                       {["All", "Incoming Letters", "Internship Reports", "Evaluation & Certificates"].map((cat) => (
                         <button
                           key={cat}
                           type="button"
                           onClick={() => setCategoryFilter(cat)}
-                          className={`px-2.5 py-1 border transition-colors cursor-pointer ${
+                          className={`px-2.5 py-1 border transition-colors cursor-pointer whitespace-nowrap flex-shrink-0 text-[11px] sm:text-xs ${
                             categoryFilter === cat
                               ? "bg-black text-white border-black font-semibold"
                               : "bg-white text-neutral-600 border-neutral-200 hover:border-black"
@@ -1241,25 +1242,26 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
         </div>
 
         {/* Modal Bottom Action Bar */}
-        <div className="sticky bottom-0 px-5 sm:px-8 py-3.5 bg-neutral-50 border-t border-neutral-200 flex items-center justify-between gap-3 text-xs font-mono">
+        <div className="sticky bottom-0 px-4 sm:px-8 py-3 bg-neutral-50 border-t border-neutral-200 flex items-center justify-between gap-3 text-xs font-mono">
           <span className="text-neutral-500 hidden sm:inline-block">
             REAL-WORLD PKL ARCHIVE DIGITIZATION EXPERIENCE
           </span>
-          <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
+          <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-end">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 border border-neutral-300 bg-white text-neutral-800 hover:text-black hover:border-black active:scale-95 transition-all font-semibold cursor-pointer"
+              className="px-3 sm:px-4 py-2 border border-neutral-300 bg-white text-neutral-800 hover:text-black hover:border-black active:scale-95 transition-all font-semibold cursor-pointer text-xs"
             >
               CLOSE
             </button>
             <a
               href="#contact"
               onClick={onClose}
-              className="inline-flex items-center gap-1.5 px-4 py-2 bg-black text-white hover:bg-neutral-800 active:scale-95 transition-all font-semibold"
+              className="inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 bg-black text-white hover:bg-neutral-800 active:scale-95 transition-all font-semibold text-xs flex-1 sm:flex-initial text-center"
             >
-              <span>DISCUSS PROJECT REQUIREMENTS</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span className="hidden xs:inline">DISCUSS PROJECT REQUIREMENTS</span>
+              <span className="xs:hidden">DISCUSS PROJECT</span>
+              <ArrowUpRight className="w-3.5 h-3.5 flex-shrink-0" />
             </a>
           </div>
         </div>
