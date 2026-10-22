@@ -42,3 +42,11 @@ Thumbs.db
 # editor directories
 .vscode/
 .idea/
+
+# temporary and backup files
+*.bak
+*.backup
+*.tmp
+*.temp
+*.swp
+*.log
