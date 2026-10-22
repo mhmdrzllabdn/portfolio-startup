@@ -114,7 +114,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-neutral-200">
             <div className="bg-neutral-50 p-5 border border-neutral-200">
               <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-500 uppercase mb-2">
-                01 // THE CHALLENGE
+                01 THE CHALLENGE
               </h4>
               <p className="text-sm text-neutral-700 leading-relaxed font-sans">
                 {project.problem}
@@ -123,7 +123,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             <div className="bg-neutral-50 p-5 border border-neutral-200">
               <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-500 uppercase mb-2">
-                02 // THE APPROACH
+                02 THE APPROACH
               </h4>
               <p className="text-sm text-neutral-700 leading-relaxed font-sans">
                 {project.solution}

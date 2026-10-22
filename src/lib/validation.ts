@@ -29,7 +29,7 @@ export function validateContactForm(data: {
   }
 
   if (!data.subject || typeof data.subject !== "string" || data.subject.trim().length < 3) {
-    errors.subject = "Subject/project scope is required (min 3 characters).";
+    errors.subject = "Subject or project scope is required (min 3 characters).";
   } else if (data.subject.trim().length > 200) {
     errors.subject = "Subject must not exceed 200 characters.";
   }

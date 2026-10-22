@@ -114,7 +114,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <section className="space-y-6">
                 <div>
                   <h2 className="text-xs font-mono font-bold text-neutral-500 mb-3 uppercase tracking-wider">
-                    01 // THE CHALLENGE
+                    01 THE CHALLENGE
                   </h2>
                   <div className="p-6 bg-white border border-neutral-200 shadow-sm">
                     <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-sans">
@@ -125,7 +125,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
                 <div>
                   <h2 className="text-xs font-mono font-bold text-neutral-500 mb-3 uppercase tracking-wider">
-                    02 // THE APPROACH
+                    02 THE APPROACH
                   </h2>
                   <div className="p-6 bg-white border border-neutral-200 shadow-sm">
                     <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-sans">

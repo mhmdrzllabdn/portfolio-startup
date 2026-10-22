@@ -76,7 +76,7 @@ const solutions: SolutionDetail[] = [
       "File Security: Sandboxed Multer PDF Storage & Anti-Hotlinking",
     ],
     systemHighlights: [
-      { label: "Backend", value: "Node.js / Express" },
+      { label: "Backend", value: "Node.js, Express" },
       { label: "Database", value: "PostgreSQL & Prisma" },
       { label: "Frontend", value: "React + Vite (RBAC)" },
       { label: "Security", value: "JWT, Bcrypt & Audit" },

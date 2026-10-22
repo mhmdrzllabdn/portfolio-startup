@@ -243,7 +243,7 @@ export default function ContactSection() {
 
                   <div>
                     <label htmlFor="inquiry-subject" className="block text-[11px] font-mono text-neutral-500 uppercase font-semibold mb-1">
-                      [03] PROJECT SUBJECT / INQUIRY *
+                      [03] PROJECT SUBJECT OR INQUIRY *
                     </label>
                     <input
                       id="inquiry-subject"
@@ -252,7 +252,7 @@ export default function ContactSection() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="Website Development / Information System"
+                      placeholder="Website Development or Information System"
                       className="w-full bg-[#FAFAFA] border border-neutral-200 focus:border-black px-3.5 py-2.5 text-sm sm:text-xs text-black placeholder-neutral-400 focus:outline-none transition-colors"
                     />
                     {fieldErrors.subject && (
@@ -266,7 +266,7 @@ export default function ContactSection() {
                         [04] MESSAGE DETAILS OR TIMELINE *
                       </label>
                       <span className="text-[10px] font-mono text-neutral-400">
-                        {formData.message.length} / 1000
+                        {formData.message.length} of 1000
                       </span>
                     </div>
                     <textarea

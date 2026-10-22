@@ -105,7 +105,7 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
           <div className="pt-4 border-t border-neutral-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-neutral-500">
             <div className="flex items-center gap-3">
               <Award className="w-4 h-4 text-black" />
-              <span className="text-neutral-700 font-medium">Computer Science / Software Engineering Background</span>
+              <span className="text-neutral-700 font-medium">Computer Science &amp; Software Engineering Background</span>
             </div>
             <a
               href="https://github.com/mhmdrzllabdn"
@@ -114,7 +114,7 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
               className="inline-flex items-center gap-2 text-black hover:opacity-75 transition-colors font-mono"
             >
               <GithubIcon className="w-3.5 h-3.5" />
-              <span>github.com/mhmdrzllabdn</span>
+              <span>GitHub: mhmdrzllabdn</span>
               <ExternalLink className="w-3 h-3 text-neutral-400" />
             </a>
           </div>

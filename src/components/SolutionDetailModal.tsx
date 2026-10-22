@@ -141,7 +141,7 @@ const backendStructureData = [
         name: "report.controller.js",
         role: "Internship Report Management",
         desc: "Report CRUD, Faceted Filtering, Teacher Academic Reviews, & Download Tracker.",
-        highlight: "Status transitions PENDING -> APPROVED/REJECTED with structured feedback logs.",
+        highlight: "Status transitions PENDING -> APPROVED or REJECTED with structured feedback logs.",
       },
       {
         path: "backend/src/controllers/user.controller.js",
@@ -293,7 +293,7 @@ const frontendStructureData = [
         path: "frontend/src/pages/ReportDetailPage.jsx",
         name: "ReportDetailPage.jsx",
         role: "Detail & Download Tracker",
-        desc: "PDF document preview, revision/comment history, & download telemetry tracking.",
+        desc: "PDF document preview, revision and comment history, & download telemetry tracking.",
         highlight: "Captures IP address and user-agent metadata on official document download events.",
       },
       {
@@ -306,7 +306,7 @@ const frontendStructureData = [
       {
         path: "frontend/src/pages/RegisterPage.jsx",
         name: "RegisterPage.jsx",
-        role: "Student/Alumni Registration",
+        role: "Student & Alumni Registration",
         desc: "Registration for students, alumni, and reviewers with student ID verification.",
         highlight: "Duplicate registration prevention and institutional identity validation.",
       },
@@ -625,7 +625,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
                 <div className="p-5 bg-neutral-50 border border-neutral-200 space-y-2">
                   <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-500 uppercase">
-                    01 // BACKGROUND &amp; CONTEXT
+                    01 BACKGROUND &amp; CONTEXT
                   </h4>
                   <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed font-sans">
                     {solution.concept}
@@ -634,7 +634,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
 
                 <div className="p-5 bg-neutral-50 border border-neutral-200 space-y-2">
                   <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-500 uppercase">
-                    02 // ARCHITECTURAL APPROACH
+                    02 ARCHITECTURAL APPROACH
                   </h4>
                   <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed font-sans">
                     {solution.approach}
@@ -838,7 +838,7 @@ export default function SolutionDetailModal({ solution, onClose }: SolutionDetai
 
                           <div className="space-y-1.5 pt-2 border-t border-neutral-200">
                             <span className="text-[10px] font-mono uppercase text-neutral-500 font-bold block">
-                              Architectural / Security Aspect:
+                              Architectural &amp; Security Aspect:
                             </span>
                             <p className="text-xs text-neutral-800 bg-neutral-100 p-3 border border-neutral-200 font-sans leading-relaxed">
                               {selectedBackendFile.highlight}

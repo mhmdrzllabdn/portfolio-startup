@@ -53,8 +53,8 @@ export const projectsData: Project[] = [
     architectureDetails: [
       "Hash-based file dependency checking algorithm to bypass unchanged builds",
       "Real-time streaming dashboard with Server-Sent Events (SSE) for live console output",
-      "Clean UI design using Tailwind CSS with dark/light mode support",
-      "Automated CI/CD pipeline integrated directly with GitHub repositories",
+      "Clean UI design using Tailwind CSS with dark and light mode support",
+      "Automated CI-CD pipeline integrated directly with GitHub repositories",
     ],
     keyAchievements: [
       "Reduced team build and test cycle durations by up to 60% compared to legacy pipelines",

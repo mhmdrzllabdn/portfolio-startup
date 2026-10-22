@@ -1,36 +1,13 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Clock, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Sparkles } from "lucide-react";
 import RevealOnScroll from "./RevealOnScroll";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLElement>(null);
   const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
-  const [timeString, setTimeString] = useState("");
-
-  // Live WIB Clock
-  useEffect(() => {
-    const updateTime = () => {
-      try {
-        const now = new Date();
-        const formatted = now.toLocaleTimeString("id-ID", {
-          timeZone: "Asia/Jakarta",
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          hour12: false,
-        });
-        setTimeString(`${formatted} WIB`);
-      } catch {
-        setTimeString("WIB");
-      }
-    };
-    updateTime();
-    const interval = setInterval(updateTime, 1000);
-    return () => clearInterval(interval);
-  }, []);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
     if (!heroRef.current) return;
@@ -87,26 +64,6 @@ export default function HeroSection() {
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col justify-between self-stretch pb-8 sm:pb-16 pt-2">
               <div>
-                {/* Top Status Bar (Mobile & Desktop) */}
-                <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center justify-between gap-2 sm:gap-3 text-[11px] font-mono text-neutral-600 mb-6 pb-3 border-b border-neutral-200">
-                  <span className="font-semibold text-neutral-700 tracking-wider uppercase">
-                    WEB DEVELOPER // PORTFOLIO
-                  </span>
-
-                  <div className="flex items-center gap-3 text-neutral-500">
-                    {timeString && (
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3 text-neutral-400" />
-                        <span>{timeString}</span>
-                      </span>
-                    )}
-                    <span className="text-neutral-300">•</span>
-                    <span className="flex items-center gap-1">
-                      <MapPin className="w-3 h-3 text-neutral-400" />
-                      <span>GRESIK, INDONESIA</span>
-                    </span>
-                  </div>
-                </div>
 
                 {/* Big Headline */}
                 <RevealOnScroll delayMs={60}>

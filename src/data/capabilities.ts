@@ -5,13 +5,13 @@ export const capabilitiesData: CapabilityItem[] = [
     number: "01",
     title: "FRONTEND DEVELOPMENT",
     description: "Building responsive interfaces, reusable components, and accessible user experiences.",
-    skills: ["Next.js / React", "TypeScript", "Tailwind CSS", "Semantic HTML & A11y", "Core Web Vitals"],
+    skills: ["Next.js, React", "TypeScript", "Tailwind CSS", "Semantic HTML & A11y", "Core Web Vitals"],
   },
   {
     number: "02",
     title: "BACKEND ENGINEERING",
     description: "Developing server-side logic, application services, and structured business rules.",
-    skills: ["Node.js / Express", "REST & GraphQL", "Microservices", "Event-Driven Queues", "Clean Architecture"],
+    skills: ["Node.js, Express", "REST & GraphQL", "Microservices", "Event-Driven Queues", "Clean Architecture"],
   },
   {
     number: "03",
@@ -29,6 +29,6 @@ export const capabilitiesData: CapabilityItem[] = [
     number: "05",
     title: "DEPLOYMENT & PERFORMANCE",
     description: "Preparing production builds, monitoring reliability, and improving application performance.",
-    skills: ["Docker Containers", "CI/CD Pipelines", "Vercel / Cloudflare", "Linux Environments", "SSR & CDN Caching"],
+    skills: ["Docker Containers", "CI-CD Pipelines", "Vercel & Cloudflare", "Linux Environments", "SSR & CDN Caching"],
   },
 ];

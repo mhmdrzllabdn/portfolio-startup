@@ -130,7 +130,7 @@ export const technologiesData: Technology[] = [
     name: "GitHub",
     category: "tool",
     group: "Tools",
-    description: "Cloud platform for repository hosting, team collaboration, and CI/CD pipelines",
+    description: "Cloud platform for repository hosting, team collaboration, and CI-CD pipelines",
     documentationUrl: "https://github.com",
     badge: "Repository",
   },

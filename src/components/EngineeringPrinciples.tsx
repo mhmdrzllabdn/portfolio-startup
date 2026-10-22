@@ -71,7 +71,7 @@ export default function EngineeringPrinciples() {
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-2 h-2 rounded-full bg-black pulse-indicator" />
                 <p className="eyebrow-text text-neutral-500 font-semibold">
-                  [ 06 // SYSTEM AXIOMS & FIELD NOTES ]
+                  [ 06 SYSTEM AXIOMS &amp; FIELD NOTES ]
                 </p>
               </div>
               <h2 className="editorial-title text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight leading-tight">
@@ -93,7 +93,7 @@ export default function EngineeringPrinciples() {
                     <div className="lg:col-span-5 space-y-4">
                       <div className="flex items-center justify-between text-xs font-mono text-neutral-400">
                         <span className="font-bold text-black font-sans text-sm">
-                          AXIOM {axiom.number} // 03
+                          AXIOM {axiom.number} OF 03
                         </span>
                         <span className="uppercase">{axiom.category}</span>
                       </div>
@@ -148,7 +148,7 @@ export default function EngineeringPrinciples() {
               <Terminal className="w-4 h-4 text-black" />
               <span>TESTED IN PRODUCTION CODEBASES & DISTRIBUTED CLUSTERS</span>
             </div>
-            <span>CODIFIED 2026 // REZA FULL-STACK ARCHITECT</span>
+            <span>CODIFIED 2026 • REZA FULL-STACK ARCHITECT</span>
           </div>
         </div>
       </div>
