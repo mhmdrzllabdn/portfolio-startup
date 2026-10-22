@@ -111,9 +111,14 @@ export default function ContactSection() {
                 <br />
                 Let&apos;s Build It Together.
               </h2>
-              <p className="text-sm sm:text-base text-neutral-600 max-w-xl mt-3 sm:mt-4 leading-relaxed font-sans">
-                Whether you need a new website, web application, or want to discuss digital solutions, feel free to reach out. I am open to exploring project needs and building the right solution for you.
-              </p>
+              <div className="text-sm sm:text-base text-neutral-600 max-w-xl mt-3 sm:mt-4 leading-relaxed font-sans space-y-2">
+                <p>
+                  If you are planning a new website, developing a web application, or improving an existing digital system, I welcome the opportunity to discuss your requirements.
+                </p>
+                <p>
+                  Share your project objectives, expected features, and timeline, and we can explore an appropriate approach together.
+                </p>
+              </div>
             </div>
           </RevealOnScroll>
 
@@ -159,7 +164,7 @@ export default function ContactSection() {
                     MESSAGE INQUIRY FORM
                   </span>
                   <span className="text-[10px] font-mono text-neutral-400 font-semibold">
-                    RESPONSE &lt; 24 HOURS
+                    EXPECTED RESPONSE TIME: WITHIN 24 HOURS
                   </span>
                 </div>
 
@@ -208,7 +213,7 @@ export default function ContactSection() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="e.g. John Doe"
+                        placeholder="Enter your full name"
                         className="w-full bg-[#FAFAFA] border border-neutral-200 focus:border-black px-3.5 py-2.5 text-sm sm:text-xs text-black placeholder-neutral-400 focus:outline-none transition-colors"
                       />
                       {fieldErrors.name && (
@@ -227,7 +232,7 @@ export default function ContactSection() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="john@example.com"
+                        placeholder="Enter your email address"
                         className="w-full bg-[#FAFAFA] border border-neutral-200 focus:border-black px-3.5 py-2.5 text-sm sm:text-xs text-black placeholder-neutral-400 focus:outline-none transition-colors"
                       />
                       {fieldErrors.email && (
@@ -247,7 +252,7 @@ export default function ContactSection() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="e.g. Website Development / Information System"
+                      placeholder="Website Development / Information System"
                       className="w-full bg-[#FAFAFA] border border-neutral-200 focus:border-black px-3.5 py-2.5 text-sm sm:text-xs text-black placeholder-neutral-400 focus:outline-none transition-colors"
                     />
                     {fieldErrors.subject && (
@@ -272,7 +277,7 @@ export default function ContactSection() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Describe your project requirements, goals, or questions..."
+                      placeholder="Describe your project requirements, objectives, expected features, or preferred timeline."
                       className="w-full bg-[#FAFAFA] border border-neutral-200 focus:border-black px-3.5 py-2.5 text-sm sm:text-xs text-black placeholder-neutral-400 focus:outline-none transition-colors resize-none font-sans"
                     />
                     {fieldErrors.message && (
@@ -292,7 +297,7 @@ export default function ContactSection() {
                       </>
                     ) : (
                       <>
-                        <span>SEND MESSAGE NOW</span>
+                        <span>SEND MESSAGE</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </>
                     )}

@@ -13,27 +13,27 @@ const faqs: FaqItem[] = [
   {
     question: "How long does it take to develop a website?",
     answer:
-      "Project turnaround depends on requirements, scope, page volume, and technical complexity. A transparent timeline is provided once project specifications are clarified.",
+      "The development timeline depends on the project’s scope, number of pages, required features, and technical complexity. Once the requirements have been discussed, I can provide a more realistic estimate and outline the main milestones.",
   },
   {
     question: "Are you available for freelance projects?",
     answer:
-      "Yes, I am actively open to discussing website and web system projects aligned with my skillset and development scope.",
+      "I am open to discussing freelance and contract projects, depending on availability and project requirements. You can share your objectives, expected timeline, and project details so we can determine whether the project is a suitable fit.",
   },
   {
     question: "Will the developed website be fully responsive?",
     answer:
-      "Yes. Every website is built mobile-first and tested rigorously to adapt smoothly across smartphones, tablets, laptops, and ultra-wide desktops.",
+      "Responsive design is considered throughout the development process. I aim to ensure that websites remain functional and easy to navigate across mobile devices, tablets, and desktop screens.",
   },
   {
     question: "Can you help improve or maintain an existing website?",
     answer:
-      "Yes, I can assist with UI improvements, refactoring, feature enhancements, and maintenance depending on your current stack and requirements.",
+      "Yes. Depending on the website’s current condition and technical requirements, I can assist with bug fixes, interface improvements, feature updates, and other maintenance tasks.",
   },
   {
     question: "What happens if issues arise after project delivery?",
     answer:
-      "I provide post-launch support and troubleshooting sessions to ensure your website continues running smoothly and reliably.",
+      "If an issue occurs after delivery, you can contact me with the relevant details. Any follow-up fixes, maintenance, or additional support will be handled according to the agreed project terms.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function FaqSection() {
                 Questions &amp; Answers
               </h2>
               <p className="text-sm sm:text-base text-neutral-600 max-w-xl mt-3 leading-relaxed font-sans">
-                Answers to common inquiries regarding project workflows, scopes, and website customizations.
+                This section addresses common questions about project timelines, website development, maintenance, and collaboration.
               </p>
             </div>
           </RevealOnScroll>

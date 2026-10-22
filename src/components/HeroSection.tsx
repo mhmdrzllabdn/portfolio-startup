@@ -119,9 +119,14 @@ export default function HeroSection() {
 
                 {/* Subtitle / Description */}
                 <RevealOnScroll delayMs={140}>
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-700 font-normal leading-relaxed max-w-2xl mb-8 sm:mb-12">
-                    I am <strong className="font-semibold text-black">Muhammad Rizal Abidin</strong>, a web developer dedicated to crafting functional, structured, and user-friendly websites and digital systems.
-                  </p>
+                  <div className="space-y-3 max-w-2xl mb-8 sm:mb-12 font-sans">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-neutral-700 font-normal leading-relaxed">
+                      I am <strong className="font-semibold text-black">Muhammad Rizal Abidin</strong>, a web developer focused on building functional, well-structured, and user-friendly websites and digital systems.
+                    </p>
+                    <p className="text-xs sm:text-sm md:text-base text-neutral-600 font-normal leading-relaxed">
+                      I aim to create practical digital solutions that meet real needs, provide a clear user experience, and remain easy to maintain.
+                    </p>
+                  </div>
                 </RevealOnScroll>
 
                 {/* Mobile Quick Action Buttons */}

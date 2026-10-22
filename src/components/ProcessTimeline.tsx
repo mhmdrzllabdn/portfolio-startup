@@ -18,72 +18,72 @@ const phases: Phase[] = [
   {
     step: "01",
     phaseName: "Discovery & Planning",
-    headline: "Clarifying goals, audience, and project scope",
+    headline: "Defining goals, requirements, and project scope.",
     objective:
-      "Discussing website objectives, target audience, and core functionality so the project scope is clearly defined and aligned from day one.",
+      "I discuss the project’s objectives, target audience, required features, and expected outcomes to establish a clear direction before development begins.",
     deliverables: [
       "Project Scope & Requirements Summary",
-      "Agreed Functional Feature Matrix",
-      "Timeline & Milestone Roadmap",
+      "Agreed Functional Feature List",
+      "Project Timeline & Milestones",
     ],
     tooling: ["Google Meet", "WhatsApp", "Project Workspace"],
-    qualityGate: "Full mutual alignment and sign-off on project scope and deliverables.",
+    qualityGate: "Project requirements, scope, priorities, and expected deliverables are clearly documented and agreed upon.",
   },
   {
     step: "02",
     phaseName: "UI/UX & Wireframing",
-    headline: "Architecting layouts, interaction flows, and visual systems",
+    headline: "Planning the interface and user experience.",
     objective:
-      "Crafting wireframes and visual UI mockups to ensure information architecture is structured, intuitive, and accessible for end-users.",
+      "I develop the page structure, navigation, and wireframes to establish a clear and consistent user experience before implementation.",
     deliverables: [
-      "High-Fidelity Page Wireframes",
-      "Visual Design System & Components",
-      "Information Hierarchy & Navigation Flows",
+      "Page Structure & Navigation Plan",
+      "Wireframes or Interface Layouts",
+      "Agreed Design Direction",
     ],
-    tooling: ["Figma", "Design System Specs"],
-    qualityGate: "Design blueprint approved prior to frontend engineering implementation.",
+    tooling: ["Design Tools", "Wireframing Tools", "Reference Materials"],
+    qualityGate: "The proposed interface and user flows align with the agreed requirements and intended user needs.",
   },
   {
     step: "03",
     phaseName: "Web Engineering",
-    headline: "Developing responsive interfaces and clean modular logic",
+    headline: "Developing the planned solution.",
     objective:
-      "Implementing production-ready pages, interactive components, and backend endpoints using structured, maintainable, and type-safe code.",
+      "I implement the agreed features, integrate the required components, and organize the application code to support reliability and maintainability.",
     deliverables: [
-      "Production-Ready Web Application",
-      "Responsive Mobile & Desktop Viewports",
-      "Form Validation & Database Integrations",
+      "Implemented Website Features",
+      "Frontend and Backend Integration, Where Required",
+      "Database Integration, Where Required",
     ],
-    tooling: ["HTML5", "CSS3 / Tailwind", "TypeScript / React", "VS Code"],
-    qualityGate: "Clean codebase adhering to modern web standards with all core features fully operational.",
+    tooling: ["Code Editor", "Git", "Development Environment"],
+    qualityGate: "Core features operate as intended, and the implementation follows the agreed project scope.",
   },
   {
     step: "04",
     phaseName: "Testing & Polish",
-    headline: "Cross-device validation, QA testing, and performance tuning",
+    headline: "Verifying functionality and refining the experience.",
     objective:
-      "Rigorous quality assurance across mobile smartphones, tablets, and desktop viewports, resolving edge-case bugs and polishing UI states.",
+      "I test the main user flows, review responsive layouts, and address issues identified during development.",
     deliverables: [
-      "Cross-Browser & Multi-Viewport QA Audit",
-      "Form Input & Navigation Flow Validation",
-      "UI Polish & Bug Fix Resolves",
+      "Functional Testing & Bug Fixes",
+      "Responsive Layout Verification",
+      "Final Interface Improvements",
     ],
-    tooling: ["Chrome DevTools", "Multi-Device Testing"],
-    qualityGate: "Flawless cross-device rendering with zero broken interactions or unhandled exceptions.",
+    tooling: ["Browser DevTools", "Responsive Testing", "Issue Tracking"],
+    qualityGate: "The agreed features work as expected across the devices and browsers included in the testing process.",
   },
   {
     step: "05",
     phaseName: "Review & Handover",
-    headline: "Final stakeholder review, deployment, and asset transfer",
+    headline: "Reviewing the results and preparing for delivery.",
     objective:
-      "Conducting a comprehensive final walkthrough, applying minor adjustments, deploying to production hosting, and delivering source assets.",
+      "I review the completed work against the agreed requirements and prepare the relevant documentation and handover materials.",
     deliverables: [
-      "Final Project Walkthrough Session",
-      "Complete Source Code & Deployment Handover",
-      "User Guide & Operational Documentation",
+      "Final Project Review",
+      "Deployment or Handover, as Agreed",
+      "Relevant Documentation & Usage Guidance",
     ],
-    tooling: ["Cloudflare / Vercel", "GitHub"],
-    qualityGate: "System live in production with clear ownership and access documentation.",
+    tooling: ["Project Review", "Documentation", "Deployment Environment"],
+    qualityGate: "The agreed deliverables have been reviewed, and the next steps for deployment, usage, or maintenance are clearly communicated.",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function ProcessTimeline() {
                   How I Work
                 </h2>
                 <p className="text-sm sm:text-base text-neutral-600 max-w-xl mt-2 sm:mt-3 leading-relaxed font-sans">
-                  A 5-stage structured engineering workflow to bring your web vision to life with precision and predictability.
+                  I follow a structured development process to ensure that each project has clear objectives, defined requirements, and measurable deliverables. The workflow may be adjusted to suit the scope and complexity of the project.
                 </p>
               </div>
 

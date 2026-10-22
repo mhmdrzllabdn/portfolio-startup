@@ -13,7 +13,7 @@ const solutions: SolutionDetail[] = [
     title: "Archive Digitization",
     subtitle: "Archive & Document Systems",
     description:
-      "Streamlining internship (PKL) archive management through a web platform so information is organized systematically.",
+      "I develop web-based archive solutions that help organize internship (PKL) records, simplify document management, and make information easier to access.",
     coverImage: "/images/arsip-beranda.png",
     concept:
       "Physical paper archives for internship activities are vulnerable to loss, damage, and time-consuming manual retrieval. A dedicated web system organizes documents within a single digital database.",
@@ -38,7 +38,7 @@ const solutions: SolutionDetail[] = [
     title: "Information Architecture",
     subtitle: "Data Structure & User Flow",
     description:
-      "Engineering structured web interfaces that help users organize and process operational data effectively.",
+      "I organize website structures, information, and user flows to help people navigate interfaces more easily and complete tasks efficiently.",
     coverImage: "/images/arsip-unggah.png",
     concept:
       "Unstructured information leads to data discrepancies and user confusion. Clean navigation hierarchy and consistent data models are the foundations of reliable systems.",
@@ -63,7 +63,7 @@ const solutions: SolutionDetail[] = [
     title: "Web Engineering",
     subtitle: "Full-Stack Architecture & Project Structure",
     description:
-      "End-to-end web engineering: Express & Prisma ORM backend architecture, role-based RBAC React frontend, and PostgreSQL database integration.",
+      "I develop web applications by connecting frontend interfaces, backend services, and databases into a cohesive system. My work includes React, Express, Prisma ORM, and PostgreSQL, depending on project requirements.",
     coverImage: "/images/pkl-structure-setup.png",
     concept:
       "Institutional-grade web applications demand clean modularity: server-side decoupling, role-based route guards (RBAC), and bulletproof relational data integrity.",
@@ -117,7 +117,7 @@ export default function FeaturedProjects() {
                 Digital Solutions for Real-World Needs
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-neutral-600 mt-3 sm:mt-4 max-w-3xl leading-relaxed font-sans">
-                I focus on engineering websites that streamline operational workflows and make information management structured and dependable. This passion was forged through hands-on development of the PKL digital archiving platform.
+                I develop websites and digital systems that help organize information, simplify everyday processes, and support practical needs. My experience developing a digital archive platform for internship (PKL) records has strengthened my interest in creating reliable and well-organized web solutions.
               </p>
             </div>
           </RevealOnScroll>
@@ -165,8 +165,8 @@ export default function FeaturedProjects() {
 
                     <div className="pt-3 sm:pt-4 border-t border-neutral-100 flex items-center justify-between text-[11px] font-mono text-neutral-500">
                       <span className="text-neutral-400">STRUCTURED &amp; FUNCTIONAL</span>
-                      <span className="font-bold text-black group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1">
-                        DETAILS →
+                      <span className="font-bold text-black group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1 text-[10px] sm:text-[11px]">
+                        EXPLORE SOLUTION DETAILS →
                       </span>
                     </div>
                   </div>

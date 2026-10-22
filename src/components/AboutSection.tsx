@@ -32,10 +32,13 @@ export default function AboutSection() {
             <RevealOnScroll delayMs={60}>
               <div className="space-y-4 sm:space-y-5 text-neutral-700 text-sm sm:text-base leading-relaxed font-sans">
                 <p>
-                  Hello, I am <strong className="text-black font-semibold">Muhammad Rizal Abidin</strong>. I have a genuine passion for web development and web-based information systems. One of my core achievements is engineering a digital archive web platform for internship (PKL) management. Through that experience, I learned to dissect system requirements, architect robust web structures, and develop purposeful digital solutions.
+                  I am <strong className="text-black font-semibold">Muhammad Rizal Abidin</strong>, a web developer with an interest in building websites and web-based information systems.
                 </p>
                 <p>
-                  I continuously hone my technical craft and deepen my understanding of the web ecosystem to produce applications that are functional, accessible, and high-impact.
+                  One of my projects is a digital archive platform for internship (PKL) records. Through this work, I gained experience translating requirements into practical features, organizing application data, and developing solutions around user needs.
+                </p>
+                <p>
+                  I continue to improve my technical skills and explore better approaches to web development. My goal is to build applications that are functional, accessible, reliable, and straightforward to maintain.
                 </p>
               </div>
             </RevealOnScroll>
@@ -48,8 +51,8 @@ export default function AboutSection() {
                   {[
                     { label: "Name", value: "Muhammad Rizal Abidin" },
                     { label: "Location", value: "Gresik, Indonesia" },
-                    { label: "Focus", value: "Web Developer" },
-                    { label: "Experience", value: "PKL Archive Digitization Platform" },
+                    { label: "Focus", value: "Web Development" },
+                    { label: "Featured Project", value: "PKL Digital Archive Platform" },
                     { label: "Languages", value: "English, Indonesian" },
                   ].map((row) => (
                     <div
@@ -80,17 +83,17 @@ export default function AboutSection() {
                   {
                     num: "01",
                     title: "Quality & Cleanliness",
-                    desc: "Maintaining structured, readable codebases that are straightforward to understand and scale.",
+                    desc: "I prioritize readable, well-organized code that is easier to understand, maintain, and extend as project requirements evolve.",
                   },
                   {
                     num: "02",
                     title: "Clear Communication",
-                    desc: "Prioritizing proactive, transparent communication when discussing requirements and milestones.",
+                    desc: "I value clear communication throughout the development process, from discussing requirements and setting expectations to reviewing progress and final deliverables.",
                   },
                   {
                     num: "03",
                     title: "Continuous Learning",
-                    desc: "Consistently adopting modern engineering practices and exploring emerging web technologies.",
+                    desc: "I continuously develop my technical knowledge and explore relevant web technologies to improve the quality and effectiveness of my work.",
                   },
                 ].map((item) => (
                   <div

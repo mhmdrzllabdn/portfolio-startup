@@ -33,25 +33,25 @@ export default function TechnologyStack() {
     const rawGroups: { name: string; purpose: string; category: string; matchCategory: string }[] = [
       {
         name: "Frontend Development",
-        purpose: "Building responsive, structured, and interactive user interfaces using modern web standards.",
+        purpose: "I use frontend technologies to build responsive layouts, interactive components, and accessible user interfaces.",
         category: "Frontend",
         matchCategory: "frontend",
       },
       {
         name: "Backend & Data Processing",
-        purpose: "Developing server-side business logic, data validation, and REST API communication endpoints.",
+        purpose: "I use backend technologies to implement application logic, process data, validate requests, and connect applications with external services.",
         category: "Backend",
         matchCategory: "backend",
       },
       {
         name: "Relational Databases",
-        purpose: "Structuring and persisting application datasets with strict relational integrity and reliability.",
+        purpose: "I work with relational databases to organize application data, maintain relationships between records, and support reliable data retrieval.",
         category: "Database",
         matchCategory: "database",
       },
       {
         name: "Tools & Developer Environment",
-        purpose: "Managing source code revisions, team repository collaboration, and extensible code editor workflows.",
+        purpose: "I use development tools to manage source code, track changes, collaborate through repositories, and maintain an organized development workflow.",
         category: "Tools",
         matchCategory: "tool",
       },
@@ -114,7 +114,7 @@ export default function TechnologyStack() {
                   Technologies &amp; Tools I Work With
                 </h2>
                 <p className="text-sm sm:text-base text-neutral-600 max-w-xl mt-2 sm:mt-3 leading-relaxed font-sans">
-                  Web technologies and engineering tools applied to architect structured, reliable, and user-centric digital experiences.
+                  I use a range of web technologies and development tools to build functional, accessible, and maintainable digital solutions. The technologies selected for each project depend on its requirements and intended functionality.
                 </p>
               </div>
 
@@ -183,7 +183,7 @@ export default function TechnologyStack() {
                   }`}
                 >
                   <List className="w-3.5 h-3.5" />
-                  <span>DIRECTORY</span>
+                  <span>TECHNOLOGY DIRECTORY</span>
                 </button>
                 <button
                   type="button"
@@ -317,7 +317,7 @@ export default function TechnologyStack() {
 
           {/* Footnote */}
           <div className="mt-8 pt-6 border-t border-neutral-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono text-neutral-500">
-            <span>FOCUSED ON FUNCTIONALITY, ARCHITECTURAL CLARITY, AND ACCESSIBILITY</span>
+            <span>FOCUSED ON FUNCTIONALITY, CLEAR ARCHITECTURE, AND ACCESSIBILITY.</span>
             <span className="text-neutral-400 text-[10px] uppercase font-semibold">
               CATEGORIES: FRONTEND · BACKEND · DATABASE · TOOLS
             </span>

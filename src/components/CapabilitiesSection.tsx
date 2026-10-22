@@ -13,17 +13,17 @@ interface Service {
 const services: Service[] = [
   {
     title: "Website Development",
-    desc: "Tailored web development aligned with your business goals.",
+    desc: "I build websites tailored to your objectives, audience, and content, with an emphasis on clear structure and practical functionality.",
     details: [
       "Company profile websites and informative landing pages",
-      "Structured, clean page hierarchy for seamless user navigation",
-      "Clear interactive touchpoints and user action flows",
-      "Modular codebase engineered for effortless maintenance and scaling",
+      "Well-organized page structures and intuitive navigation",
+      "Interactive elements that support clear user actions",
+      "Maintainable code that can be updated as requirements change",
     ],
   },
   {
     title: "Web Information Systems",
-    desc: "Purpose-built web systems to organize documents, records, and digital assets.",
+    desc: "I develop web-based systems that help organize documents, manage records, and make digital information easier to access and maintain.",
     details: [
       "Web-based records archiving and catalog management",
       "Structured data tables with instant filtering and search",
@@ -33,7 +33,7 @@ const services: Service[] = [
   },
   {
     title: "Responsive Web Design",
-    desc: "Fluid interfaces that adapt seamlessly across all screen viewports.",
+    desc: "I create responsive interfaces that adapt to different screen sizes and provide a consistent browsing experience across mobile devices, tablets, and desktops.",
     details: [
       "Mobile-first responsive layouts tailored for smartphones",
       "Optimized viewing experience on tablets and iPads",
@@ -43,7 +43,7 @@ const services: Service[] = [
   },
   {
     title: "Website Maintenance & Enhancements",
-    desc: "Refining, updating, and optimizing existing websites to meet evolving needs.",
+    desc: "I help maintain and improve existing websites through updates, bug fixes, usability improvements, and additional features based on project requirements.",
     details: [
       "Content layout adjustments and typographic polish",
       "UI bug fixes and cross-browser consistency updates",
@@ -77,7 +77,7 @@ export default function CapabilitiesSection() {
                 How I Can Help
               </h2>
               <p className="text-sm sm:text-base text-neutral-600 mt-3 max-w-xl font-sans">
-                Specialized services tailored to build modern websites and streamline your web-based information systems.
+                I provide web development services focused on usability, functionality, and maintainability. Each solution is planned around the project’s objectives and requirements.
               </p>
             </div>
           </RevealOnScroll>

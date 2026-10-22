@@ -35,7 +35,7 @@ export default function Footer() {
               WEB DEVELOPER
             </span>
             <p className="text-xs sm:text-sm font-sans text-neutral-600 mt-2 max-w-xl">
-              Developing websites, mastering technologies, and crafting purposeful digital solutions.
+              Developing functional websites, expanding technical expertise, and creating practical digital solutions through thoughtful web development.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
                 aria-label="Scroll back to top"
                 className="inline-flex items-center gap-1.5 font-bold text-black hover:text-neutral-600 active:scale-95 transition-all cursor-pointer group"
               >
-                <span>TOP</span>
+                <span>BACK TO TOP</span>
                 <ArrowUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
               </button>
             </div>
