@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { X, Check, Code2, Server, Award, ExternalLink } from "lucide-react";
-import { GithubIcon } from "./Icons";
+import { GithubIcon } from "@/components/ui/Icons";
 
 interface AboutModalProps {
   isOpen: boolean;

@@ -4,8 +4,8 @@ import React, { useState, useMemo } from "react";
 import { Search, X, Layers, ExternalLink, List, Grid3X3 } from "lucide-react";
 import { technologiesData } from "@/data/technologies";
 import { Technology } from "@/types";
-import TechMarquee from "./TechMarquee";
-import RevealOnScroll from "./RevealOnScroll";
+import TechMarquee from "@/components/ui/TechMarquee";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 interface TechGroupSpec {
   index: string;

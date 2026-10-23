@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
-import RevealOnScroll from "./RevealOnScroll";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 interface Phase {
   step: string;

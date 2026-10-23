@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, CheckCircle2, Layers } from "lucide-react";
-import { GithubIcon } from "@/components/Icons";
+import { GithubIcon } from "@/components/ui/Icons";
 import { projectsData } from "@/data/projects";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 interface PageProps {
   params: Promise<{

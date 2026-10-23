@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import FeaturedProjects from "@/components/FeaturedProjects";
-import AboutSection from "@/components/AboutSection";
-import CapabilitiesSection from "@/components/CapabilitiesSection";
-import ProcessTimeline from "@/components/ProcessTimeline";
-import FaqSection from "@/components/FaqSection";
-import TechnologyStack from "@/components/TechnologyStack";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import ScrollProgress from "@/components/ScrollProgress";
+import Navbar from "@/components/layout/Navbar";
+import HeroSection from "@/components/sections/HeroSection";
+import FeaturedProjects from "@/components/sections/FeaturedProjects";
+import AboutSection from "@/components/sections/AboutSection";
+import CapabilitiesSection from "@/components/sections/CapabilitiesSection";
+import ProcessTimeline from "@/components/sections/ProcessTimeline";
+import FaqSection from "@/components/sections/FaqSection";
+import TechnologyStack from "@/components/sections/TechnologyStack";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/layout/Footer";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FAFAFA] text-neutral-900 flex flex-col relative selection:bg-black selection:text-white">

@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FolderGit2, Database, Layout, ArrowUpRight, Sparkles } from "lucide-react";
-import RevealOnScroll from "./RevealOnScroll";
-import SolutionDetailModal, { SolutionDetail } from "./SolutionDetailModal";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import SolutionDetailModal, { SolutionDetail } from "@/components/modals/SolutionDetailModal";
 
 const solutions: SolutionDetail[] = [
   {

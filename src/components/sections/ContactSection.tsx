@@ -10,8 +10,8 @@ import {
   Copy,
   Check,
 } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./Icons";
-import RevealOnScroll from "./RevealOnScroll";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 export default function ContactSection() {
   const [copied, setCopied] = useState(false);

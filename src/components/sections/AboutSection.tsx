@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import RevealOnScroll from "./RevealOnScroll";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 export default function AboutSection() {
   return (

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
-import RevealOnScroll from "./RevealOnScroll";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 interface FaqItem {
   question: string;

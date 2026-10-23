@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ArrowUpRight, Terminal } from "lucide-react";
-import RevealOnScroll from "./RevealOnScroll";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 interface Axiom {
   number: string;

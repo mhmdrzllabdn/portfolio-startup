@@ -3,7 +3,7 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Sparkles } from "lucide-react";
-import RevealOnScroll from "./RevealOnScroll";
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLElement>(null);

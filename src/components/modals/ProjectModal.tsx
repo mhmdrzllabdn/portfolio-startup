@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { X, ExternalLink, CheckCircle2, Layers } from "lucide-react";
-import { GithubIcon } from "./Icons";
+import { GithubIcon } from "@/components/ui/Icons";
 import { Project } from "@/types";
 
 interface ProjectModalProps {
