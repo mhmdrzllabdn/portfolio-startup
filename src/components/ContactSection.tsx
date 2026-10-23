@@ -159,12 +159,9 @@ export default function ContactSection() {
             {/* Left: Message Inquiry Form (Cols 1-7) */}
             <div className="lg:col-span-7 bg-white border border-neutral-200 p-5 sm:p-8 lg:p-10 shadow-xs">
               <RevealOnScroll delayMs={80}>
-                <div className="flex items-center justify-between pb-4 mb-6 border-b border-neutral-200">
+                <div className="flex items-center pb-4 mb-6 border-b border-neutral-200">
                   <span className="font-heading font-extrabold text-sm uppercase tracking-wider text-black">
                     MESSAGE INQUIRY FORM
-                  </span>
-                  <span className="text-[10px] font-mono text-neutral-400 font-semibold">
-                    EXPECTED RESPONSE TIME: WITHIN 24 HOURS
                   </span>
                 </div>
 
@@ -204,7 +201,7 @@ export default function ContactSection() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                     <div>
                       <label htmlFor="inquiry-name" className="block text-[11px] font-mono text-neutral-500 uppercase font-semibold mb-1">
-                        [01] FULL NAME *
+                        [01] FULL NAME
                       </label>
                       <input
                         id="inquiry-name"
@@ -223,7 +220,7 @@ export default function ContactSection() {
 
                     <div>
                       <label htmlFor="inquiry-email" className="block text-[11px] font-mono text-neutral-500 uppercase font-semibold mb-1">
-                        [02] EMAIL ADDRESS *
+                        [02] EMAIL ADDRESS
                       </label>
                       <input
                         id="inquiry-email"
@@ -243,7 +240,7 @@ export default function ContactSection() {
 
                   <div>
                     <label htmlFor="inquiry-subject" className="block text-[11px] font-mono text-neutral-500 uppercase font-semibold mb-1">
-                      [03] PROJECT SUBJECT OR INQUIRY *
+                      [03] PROJECT SUBJECT OR INQUIRY
                     </label>
                     <input
                       id="inquiry-subject"
@@ -263,7 +260,7 @@ export default function ContactSection() {
                   <div>
                     <div className="flex items-center justify-between mb-1">
                       <label htmlFor="inquiry-message" className="block text-[11px] font-mono text-neutral-500 uppercase font-semibold">
-                        [04] MESSAGE DETAILS OR TIMELINE *
+                        [04] MESSAGE DETAILS OR TIMELINE
                       </label>
                       <span className="text-[10px] font-mono text-neutral-400">
                         {formData.message.length} of 1000
