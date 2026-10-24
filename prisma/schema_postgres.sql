@@ -63,6 +63,7 @@ CREATE TABLE technologies (
     name VARCHAR(100) NOT NULL,
     category technology_category NOT NULL,
     icon_url VARCHAR(500),
+    description TEXT,
     documentation_url VARCHAR(500),
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
